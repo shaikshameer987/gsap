@@ -1,0 +1,59 @@
+* {
+    position: relative;
+}
+
+body {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#demo {
+    outline: 1px solid black;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 500px;
+    left: 250px;
+    background: black;
+}
+
+.boxWrapper {
+    top: 200px;
+    display: flex;
+    column-gap: 3px;
+    width: fit-content;
+}
+
+.box {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b6e1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    background: dodgerblue;
+    border-radius: 10px;
+}
+
+.boxWrapper,
+.line {
+    pointer-events: none;
+}
+
+.box path {
+    fill: white;
+}
+
+.box svg {
+    transform: scale(0.8);
+    /* border:1px solid red; */
+}

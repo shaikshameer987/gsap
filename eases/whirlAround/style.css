@@ -1,0 +1,49 @@
+body {
+    background-color: #230716;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Kanit, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#demo {
+    overflow: hidden;
+    width: 800px;
+    height: 350px;
+    visibility: hidden;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    color: #ccc;
+    display: inline-block;
+    font-family: kanit;
+    font-style: italic;
+    font-weight: 500;
+    top: 120px;
+}
+
+img {
+    position: absolute;
+    top: 100px;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+    color: #ffcc32;
+}

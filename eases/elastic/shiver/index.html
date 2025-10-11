@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Kanit:300,400,600&display=swap"
+            rel="stylesheet"
+        />
+        <div class="wrapper">
+            <p>Creativity Is Intelligence Having Fun</p>
+        </div>
+        <div class="nav">
+            <div class="sliderGroup">
+                duration
+                <input id="durationSlider" type="range" min="0.5" max="5" value="0" step="0.05" />
+                <div id="durationDisplay">0.00</div>
+            </div>
+
+            <div class="sliderGroup">
+                amplitude
+                <input id="amplitudeSlider" type="range" min="0.5" max="4" value="0" step="0.5" />
+                <div id="amplitudeDisplay">0.00</div>
+            </div>
+
+            <div class="sliderGroup">
+                frequency
+                <input id="frequencySlider" type="range" min="0" max="1" value="0" step="0.01" />
+                <div id="frequencyDisplay">0.00</div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

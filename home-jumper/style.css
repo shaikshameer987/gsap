@@ -1,0 +1,62 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #20253f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo {
+    border: 1px solid grey;
+    width: 400px;
+    height: 400px;
+    background: #d6deff;
+}
+
+.hermanWrapper {
+    width: 100%;
+    height: 305px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.herman {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    left: 150px;
+}
+
+.hole {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    top: 290px;
+    left: 125px;
+}
+
+.shadow {
+    position: absolute;
+    opacity: 0;
+    width: 150px;
+    height: 20px;
+    top: 290px;
+    border-radius: 50%;
+    left: 125px;
+    background: radial-gradient(rgba(33, 32, 32, 0.027), rgb(0, 0, 0, 10%));
+    background-repeat: no-repeat;
+}

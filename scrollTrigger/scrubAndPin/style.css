@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.first {
+    width: 100vw;
+    height: 100vh;
+    background-color: magenta;
+}
+
+.second {
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+}
+
+.third {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 20vw;
+    white-space: nowrap;
+    transform: translateX(100vw);
+}
+
+.fourth {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+}
+
+.fifth {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}

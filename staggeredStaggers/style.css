@@ -1,0 +1,33 @@
+body,
+html {
+    font-family: sans-serif;
+    background: #ffcc33;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.demo {
+    perspective: 800px;
+    visibility: hidden;
+    height: 100%;
+}
+
+.demo div {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    font-weight: 800;
+    font-size: 60px;
+    color: #1c70a7;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+}

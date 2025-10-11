@@ -1,0 +1,116 @@
+html,
+body {
+    margin: 0;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lora, serif;
+    font-size: 18px;
+    background: #f9fdff;
+}
+
+
+
+.main {
+    min-width: 400px;
+    max-width: 1200px;
+    overflow: visible;
+    margin: auto;
+}
+
+.fullScreen {
+    width: 100%;
+    height: 100vh;
+    background: #00bcd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.cols-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.cols-2 .item {
+    min-width: 250px;
+    padding: 1em;
+    margin-right: 1em;
+    flex: 1;
+}
+
+.cols-2 .item:last-of-type {
+    margin-right: 0;
+}
+
+.cols-2:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.photo {
+    background-size: cover;
+    background-position: 50% 80%;
+    width: 100%;
+    height: 100%;
+}
+
+.ozarkhills {
+    background-image: url(https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+.crimsonforest {
+    background-image: url(https://images.pexels.com/photos/589810/pexels-photo-589810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: 50% 20%;
+}
+
+.shamrockmeadows {
+    background-image: url(https://images.pexels.com/photos/732547/pexels-photo-732547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.riverdetroit {
+    background-image: url(https://images.pexels.com/photos/545968/pexels-photo-545968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+/* small screen */
+@media only screen and (max-width: 600px) {
+    .cols-2 {
+        flex-direction: column;
+    }
+
+    .cols-2:nth-of-type(odd) {
+        flex-direction: column;
+    }
+    .cols-2 h1 {
+        margin: 0;
+    }
+
+    .cols-2 .item {
+        width: 100%;
+        margin-bottom: 1em;
+        flex: 1;
+    }
+
+    .cols-2 .item.photoHolder {
+        padding: 0;
+    }
+
+    .cols-2 .item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .photo {
+        min-height: 40vh;
+    }
+}

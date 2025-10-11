@@ -1,0 +1,83 @@
+* {
+    position: relative;
+}
+
+:root {
+    --headerSize: clamp(60px, 10vw, 100px);
+    --headerActiveBG: #444;
+    --headerActiveText: white;
+    --headerOffBG: #ddd;
+    --headerOffText: #aaa;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.wrapper {
+    width: clamp(340px, 80%, 800px);
+    margin: auto;
+}
+.space {
+    height: 100vh;
+}
+
+p {
+    margin: 20px 0 20px 0;
+    font-size: clamp(18px, 1.8vw, 30px);
+    line-height: 1.6em;
+}
+
+.heading-3d-wrapper {
+    height: var(--headingSize);
+    width: 100%;
+    margin-top: 8vw;
+}
+
+.heading-3d {
+    margin: 0;
+    transform-origin: 50% 50% calc(var(--headerSize) / -2);
+    height: var(--headerSize);
+    transform-style: preserve-3d;
+}
+
+.heading-3d div {
+    width: 100%;
+    position: absolute;
+    height: var(--headerSize);
+    text-align: center;
+}
+
+.heading-3d div h2 {
+    text-transform: uppercase;
+    font-size: calc(var(--headerSize) / 2);
+    line-height: var(--headerSize);
+    margin: 0;
+    padding: 0;
+}
+
+.heading-3d div:nth-child(1) {
+    transform-origin: 50% 100%;
+    transform: translateY(-100%) rotateX(90deg);
+    background: var(--headerOffBG);
+    color: var(--headerOffText);
+}
+
+.heading-3d div:nth-child(2) {
+    background: var(--headerActiveBG);
+    color: var(--headerActiveText);
+}
+
+.heading-3d div:nth-child(3) {
+    transform-origin: 0 0;
+    transform: translateY(100%) rotateX(-90deg);
+    background: var(--headerOffBG);
+    color: var(--headerOffText);
+}

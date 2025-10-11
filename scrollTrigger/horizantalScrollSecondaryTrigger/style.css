@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background: #15151e;
+}
+
+.races {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.races h2 {
+    font-family: "Staatliches", cursive;
+    font-size: clamp(100px, 30vw, 30vh);
+    flex-shrink: 0;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    color: #e10600;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.lightBG {
+    background: #313143;
+}
+
+.space-20vh {
+    height: 20vh;
+}
+
+.space-30vh {
+    height: 30vh;
+}
+
+.space-50vh {
+    height: 50vh;
+}
+
+.space-100vh {
+    height: 100vh;
+}
+.maps {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40vh;
+}
+.map {
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dedeff;
+    font-size: 6vw;
+    font-family: sans-serif;
+}
