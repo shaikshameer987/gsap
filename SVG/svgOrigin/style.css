@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+line {
+    stroke: #555;
+    stroke-width: 1px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+}

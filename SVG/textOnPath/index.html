@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 800 300"
+            width="800px"
+            height="300px"
+            xmlns:bx="https://boxy-svg.com"
+        >
+            <defs>
+                <style bx:fonts="Baloo 2">
+                    @import url(https://fonts.googleapis.com/css2?family=Baloo+2%3Aital%2Cwght%400%2C400..800&amp;display=swap);
+                </style>
+            </defs>
+            <text
+                style="
+                    fill: rgb(51, 51, 51);
+                    font-family: 'Baloo 2';
+                    font-size: 42px;
+                    font-weight: 800;
+                    white-space: pre;
+                "
+            >
+                <textPath id="myPath" href="#text-path-0" startOffset="-283">
+                    TEXT ON A PATH
+                </textPath>
+            </text>
+            <path
+                id="text-path-0"
+                fill="none"
+                stroke="red"
+                d="M -25.764 164.414 C 24.293 149.566 223.291 60.471 400.047 109.801 C 584.13 161.176 775.087 131.633 834.296 163.22"
+            ></path>
+        </svg>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
